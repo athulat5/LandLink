@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: rgb(10, 10, 10);
+            display: flex;
+            justify-content: normal;
+            gap: 14px;
+            align-items: center;
+            padding: 5px 20px;
+            position: fixed;
+            top: 1px;
+            left: 0;
+            z-index: 1000;
+            font-family: "Poppins", sans-serif;
+            border-radius: 5px;
+        }
+        .navbar a {
+            color: white; 
+            text-decoration: none;
+            padding: 12px 16px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .navbar a:hover {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 200px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            color: black;
+            display: block;
+            padding: 10px 15px;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: rgb(240, 240, 240);
+        }
+        .navbar .cname {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .navbar .cname:hover {
+            background-color: transparent;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="cname" href="home.php">LandLink</a>
+        <a href="home.php">Home</a>
+        <a href="login.php">Login</a>
+
+        <div class="dropdown">
+            <a href="#">Industry ▼</a>
+            <div class="dropdown-content">
+                <a href="#">Check Approval Status</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Client ▼</a>
+            <div class="dropdown-content">
+                <a href="#">Register</a>
+                <a href="#">Check Approval Status</a>
+            </div>
+        </div>
+
+        <a href="#">Existing Industry</a>
+        <a href="#">Products</a>
+        <a href="about.html">About Us</a>
+    </div>
+</body>
+</html>
